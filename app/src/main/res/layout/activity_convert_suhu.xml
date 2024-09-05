@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_main"
+    tools:context=".convert_suhu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Konversi Suhu"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Masukkan suhu dalam Celcius"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnHitung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"
+                android:text="Convert"
+                android:textColor="@color/white"
+                android:backgroundTint="#063852"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/Fahr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Fahrenheit : "
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"/>
+
+        <TextView
+            android:id="@+id/kelv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="Kelvin           : "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Ream"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Reamur        : "
+                android:textSize="18sp"
+                android:layout_marginHorizontal="20dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/white"
+                android:backgroundTint="#063852"
+                android:text="Back" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
